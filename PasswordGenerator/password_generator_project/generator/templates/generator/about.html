@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<div class="container">
+<body>
+<h1>About</h1>
+<h2>Simple password generator with possibility to add numbers, special symbols and uppercase letters</h2>
+<p class="aboutP"><a href="{% url 'home' %}" class="pseudo_btn">Main page</a></p>
+<p class="aboutP"><a href="https://github.com/animeh4ter" class="pseudo_btn">GitHub</a></p>
+</body>
+</div>
+</html>

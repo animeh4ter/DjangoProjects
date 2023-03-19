@@ -1,0 +1,101 @@
+body{
+    background: rgb(239, 235, 206);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+}
+
+.box{
+    width: 370px;
+    background: rgb(239, 235, 206);
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+.container{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.container h1{
+    text-align: center;
+
+}
+
+.container form, .container h2{
+    background: rgb(214, 206, 147) ;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header{
+    text-align: right;
+    background: rgb(214, 206, 147) ;
+}
+
+header > p{
+margin-top: 0;
+margin-bottom: 40px;
+padding: 15px;
+border-radius: 10px;
+}
+
+header > p > a{
+    margin-right: 45px;
+    text-decoration: none;
+    color: gray;
+}
+
+header > p > a:hover{
+    text-decoration: underline;
+}
+
+.aboutP, .pasP{
+    text-align: center;
+}
+
+.pseudo_btn {
+    display: inline-block;
+    background: rgb(214, 206, 147);
+    color: black;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.pseudo_btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+select{
+    border-radius: 7px;
+}
+
+.homeP{
+    text-align: left;
+}
+
+.homePbtn{
+    text-align: center;
+}
+
+.pseudo_btn_sub{
+    display: inline-block;
+    background: rgb(239, 235, 206);
+    color: black;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.pseudo_btn_sub:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
