@@ -1,0 +1,24 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<div class="upper">
+<h1>Tools for web development</h1>
+<a href="{% url 'index' %}" class="button">Back to main</a>
+</div>
+<div class="block">
+    {% for article in articles %}
+    <div class="article">
+    <div class="article_header">
+    <div class="img">
+        <a href="{{article.url}}" class="img_lnk" target="_blank"><img src="{{article.image.url}}"></a>
+    </div>
+        <h2><a href="{{article.url}}" class="title" target="_blank">{{article.title}}</a></h2></div>
+        <div class="text">
+        <p>{{article.text|safe}}</p>
+         {% if article.date != None %}
+        <p class="date">{{article.date}}</p>
+         {% endif %}
+    </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
