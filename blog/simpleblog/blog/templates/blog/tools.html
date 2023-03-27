@@ -1,9 +1,5 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-<div class="upper">
-<h1>Tools for web development</h1>
-<a href="{% url 'index' %}" class="button">Back to main</a>
-</div>
 <div class="block">
     {% for article in articles %}
     <div class="article">

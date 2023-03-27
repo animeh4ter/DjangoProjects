@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<div class="helper_sign">
+<div class="sign_header">
+    <div class="error_text">
+        {{error}}
+    </div>
+    <h1>Registration</h1>
+</div>
+    <form action="" method="post" class="register">
+    {% csrf_token %}
+    {{form.as_p}}
+    <div class="btn_wrapper">
+    <button class="btn">Create an account</button>
+    </div>
+    </form>
+</div>
+{% endblock %}

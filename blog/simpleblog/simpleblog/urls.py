@@ -21,9 +21,14 @@ from blog import views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls, name='admin_panel'),
+
+    path('signup/', views.signup, name='signup'),
+    path('signin/', views.sign_in, name='signin'),
+    path('logout/', views.logout_user, name='logout'),
+
     path('', views.home, name='index'),
-    path('tools', views.tools, name='tools')
+    path('tools/', views.tools, name='tools'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
