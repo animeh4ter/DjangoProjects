@@ -6,7 +6,7 @@ from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 def paginate_projects(request, projects, results):
     page = request.GET.get('page', 1)
     # result = 6
-    paginator = Paginator(projects, results, allow_empty_first_page=False)
+    paginator = Paginator(projects, results, allow_empty_first_page=True)
     # code for older django with page method
     # try:
     #     pr = paginator.get_page(page)
